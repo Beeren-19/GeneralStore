@@ -17,45 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
 
+WebUI.navigateToUrl('https://meesho.com/')
 
-Mobile.startApplication('C:\\Users\\Dell\\Downloads\\FMCG - 0.0.3 - APKTurbo.com.apk', true)
+WebUI.setText(findTestObject('Object Repository/Task/Page_Meesho Online Shopping-Lowest Prices,G_91e2c8/input_Download App_Text__StyledText-sc-oo0k_e4aaf8'), 
+    'shoes')
 
-Mobile.swipe(443, 412, 450, 1889)
+WebUI.sendKeys(findTestObject('Object Repository/Task/Page_Meesho Online Shopping-Lowest Prices,G_91e2c8/input_Download App_Text__StyledText-sc-oo0k_e4aaf8'), 
+    Keys.chord(Keys.ENTER))
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP (19)'), 0)
+WebUI.click(findTestObject('Object Repository/Task/Page_Buy shoes Online at best prices at Meesho/img_Supplier_NewProductCard__ImageStyled-sc_ae5d1c'))
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - Use Current Address (19)'), 0)
+WebUI.click(findTestObject('Object Repository/Task/Page_Mens Stylish Sports Shoes/span_IND-8'))
 
-Mobile.swipe(443, 412, 450, 1889)
+WebUI.click(findTestObject('Object Repository/Task/Page_Mens Stylish Sports Shoes/span_Add To Cart'))
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - Fresh-Produce-500x500 (17)'), 0)
-
-Mobile.swipe(443, 412, 450, 1889)
-
-String expected=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (4)'), 0)
-
-println "$expected"
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - ADD (17)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - cart 0 (15)'), 0)
-
-String actual=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (5)'), 0)
-
-println "$actual"
-
-if(actual==expected) {
-	println "item is present"
-}
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - add circle (10)'), 0)
-
-Mobile.closeApplication()
-
-
-
-
-
-
+WebUI.closeBrowser()
 

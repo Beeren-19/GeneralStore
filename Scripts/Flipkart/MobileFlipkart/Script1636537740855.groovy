@@ -17,45 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.startApplication('C:\\Users\\Dell\\Downloads\\com.flipkart.android (1).apk', true)
 
+Mobile.tap(findTestObject('Object Repository/Task/android.widget.TextView - Search for Products, Brands and More'), 0)
 
-Mobile.startApplication('C:\\Users\\Dell\\Downloads\\FMCG - 0.0.3 - APKTurbo.com.apk', true)
+Mobile.setText(findTestObject('Object Repository/Task/android.widget.EditText - Search for Products, Brands and More'), 
+    'realme mobiles', 0)
 
-Mobile.swipe(443, 412, 450, 1889)
+Mobile.tap(findTestObject('Object Repository/Task/android.widget.TextView - realme mobiles under 15000'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP (19)'), 0)
+Mobile.tap(findTestObject('Object Repository/Task/android.widget.TextView - realme Narzo 50A (Oxygen Blue, 128 GB)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - Use Current Address (19)'), 0)
-
-Mobile.swipe(443, 412, 450, 1889)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - Fresh-Produce-500x500 (17)'), 0)
-
-Mobile.swipe(443, 412, 450, 1889)
-
-String expected=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (4)'), 0)
-
-println "$expected"
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - ADD (17)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - cart 0 (15)'), 0)
-
-String actual=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (5)'), 0)
-
-println "$actual"
-
-if(actual==expected) {
-	println "item is present"
-}
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - add circle (10)'), 0)
+Mobile.tap(findTestObject('Object Repository/Task/android.widget.TextView - ADD TO CART'), 0)
 
 Mobile.closeApplication()
-
-
-
-
-
-
 

@@ -17,45 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.startApplication('C:\\Users\\Dell\\Downloads\\General-Store (3).apk', true)
+
+Mobile.tap(findTestObject('Object Repository/Task/android.widget.Spinner'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Task/android.widget.TextView - Algeria'), 0)
 
 
-Mobile.startApplication('C:\\Users\\Dell\\Downloads\\FMCG - 0.0.3 - APKTurbo.com.apk', true)
+Mobile.setText(findTestObject('Task/android.widget.EditText - Enter name here'), 'beerendra', 0)
 
-Mobile.swipe(443, 412, 450, 1889)
+Mobile.tap(findTestObject('Object Repository/Task/android.widget.RadioButton - Male'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP (19)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - Use Current Address (19)'), 0)
-
-Mobile.swipe(443, 412, 450, 1889)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - Fresh-Produce-500x500 (17)'), 0)
-
-Mobile.swipe(443, 412, 450, 1889)
-
-String expected=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (4)'), 0)
-
-println "$expected"
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - ADD (17)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - cart 0 (15)'), 0)
-
-String actual=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (5)'), 0)
-
-println "$actual"
-
-if(actual==expected) {
-	println "item is present"
-}
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - add circle (10)'), 0)
+Mobile.tap(findTestObject('Object Repository/Task/android.widget.Button - Lets  Shop'), 0)
 
 Mobile.closeApplication()
-
-
-
-
-
-
 

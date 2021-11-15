@@ -17,45 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
 
+WebUI.navigateToUrl('https://www.flipkart.com/')
 
-Mobile.startApplication('C:\\Users\\Dell\\Downloads\\FMCG - 0.0.3 - APKTurbo.com.apk', true)
+WebUI.setText(findTestObject('Object Repository/Task/Page_Online Shopping Site for Mobiles, Elec_b3f752/input_Get access to your Orders, Wishlist a_a7d639'), 
+    '9164991755')
 
-Mobile.swipe(443, 412, 450, 1889)
+WebUI.setEncryptedText(findTestObject('Object Repository/Task/Page_Online Shopping Site for Mobiles, Elec_b3f752/input_Enter EmailMobile number__2IX_2- _3mc_bfbf75'), 
+    'jI2sTdxjhXCf9oGo4hJjKA==')
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP (19)'), 0)
+WebUI.click(findTestObject('Object Repository/Task/Page_Online Shopping Site for Mobiles, Elec_b3f752/span_Login'))
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - Use Current Address (19)'), 0)
+WebUI.setText(findTestObject('Object Repository/Task/Page_Online Shopping Site for Mobiles, Elec_b3f752/input_Plus_q'), 
+    'realme mobile')
 
-Mobile.swipe(443, 412, 450, 1889)
+WebUI.click(findTestObject('Object Repository/Task/Page_Online Shopping Site for Mobiles, Elec_b3f752/svg'))
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - Fresh-Produce-500x500 (17)'), 0)
+WebUI.click(findTestObject('Object Repository/Task/Page_Realme Mobile- Buy Products Online at _853a52/div_realme C21 (Cross Blue, 64 GB)'))
 
-Mobile.swipe(443, 412, 450, 1889)
+WebUI.switchToWindowTitle('realme C21 ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com')
 
-String expected=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (4)'), 0)
+WebUI.click(findTestObject('Object Repository/Task/Page_realme C21 ( 64 GB Storage, 4 GB RAM )_9d5f7a/button_GO TO CART'))
 
-println "$expected"
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - ADD (17)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - cart 0 (15)'), 0)
-
-String actual=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (5)'), 0)
-
-println "$actual"
-
-if(actual==expected) {
-	println "item is present"
-}
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - add circle (10)'), 0)
-
-Mobile.closeApplication()
-
-
-
-
-
-
+WebUI.closeBrowser()
 

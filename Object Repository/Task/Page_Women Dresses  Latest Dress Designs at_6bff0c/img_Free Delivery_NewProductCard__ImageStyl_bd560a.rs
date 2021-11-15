@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_Free Delivery_NewProductCard__ImageStyl_bd560a</name>
+   <tag></tag>
+   <elementGuidId>3c88ac07-10d9-40c1-aaa0-e744f0217aba</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__next']/div[3]/div/div/div/div[3]/div/div[15]/a/div/div/div/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Trendy Partywear Women Dresses</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://images.meesho.com/images/products/59435558/v5gzo_512.jpg</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>decoding</name>
+      <type>Main</type>
+      <value>async</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>NewProductCard__ImageStyled-sc-j0e7tu-19 ieioYG</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__next&quot;)/div[@class=&quot;sc-bdvvtL Desktop__ContainerStyled-sc-1jz570n-0 byHcNc kfIzHc&quot;]/div[@class=&quot;sc-gsDKAQ Grid__Row-sc-4ki5nk-0 iQiJjX gfsqfL&quot;]/div[@class=&quot;sc-dkPtRN hteYJb&quot;]/div[@class=&quot;sc-bdvvtL ProductListingContent__ContainerStyled-sc-e96brm-1 byHcNc leRIiF&quot;]/div[@class=&quot;sc-bdvvtL ProductList__PLPContainer-sc-8lnc8o-1 byHcNc eVzmpH&quot;]/div[@class=&quot;sc-gsDKAQ Grid__Row-sc-4ki5nk-0 iQiJjX gfsqfL products&quot;]/div[@class=&quot;sc-dkPtRN ProductList__GridCol-sc-8lnc8o-0 FjWWx jMkQHN&quot;]/a[1]/div[@class=&quot;Card__BaseCard-sc-b3n78k-0 fa-dWHP NewProductCard__CardStyled-sc-j0e7tu-0 fqpiyA NewProductCard__CardStyled-sc-j0e7tu-0 fqpiyA&quot;]/div[@class=&quot;NewProductCard__ProductImage-sc-j0e7tu-14 hXRxk&quot;]/div[1]/img[@class=&quot;NewProductCard__ImageStyled-sc-j0e7tu-19 ieioYG&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__next']/div[3]/div/div/div/div[3]/div/div[15]/a/div/div/div/img</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='Trendy Partywear Women Dresses']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[15]/a/div/div/div/img</value>
+   </webElementXpaths>
+</WebElementEntity>

@@ -6,6 +6,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
@@ -14,48 +15,35 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+import io.appium.java_client.AppiumDriver
+
 import org.openqa.selenium.Keys as Keys
 
 
 
 Mobile.startApplication('C:\\Users\\Dell\\Downloads\\FMCG - 0.0.3 - APKTurbo.com.apk', true)
 
-Mobile.swipe(443, 412, 450, 1889)
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP (21)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP (19)'), 0)
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - Use Current Address (21)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - Use Current Address (19)'), 0)
+Mobile.tap(findTestObject('Object Repository/android.widget.Image - Fresh-Produce-500x500 (19)'), 0)
 
-Mobile.swipe(443, 412, 450, 1889)
+//List<Webelements> texts = Mobile.getText(findTestObject('android.view.View (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - Fresh-Produce-500x500 (17)'), 0)
+AppiumDriver<?> driver=MobileDriverFactory.getDriver()
 
-Mobile.swipe(443, 412, 450, 1889)
+ArrayList texts = driver.findElementsByClassName('android.view.ListView')
+println(texts.size())
 
-String expected=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (4)'), 0)
+//for ( text in texts) {
+//
+//   
+//   println "$text"
+//}
 
-println "$expected"
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - ADD (17)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - cart 0 (15)'), 0)
-
-String actual=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (5)'), 0)
-
-println "$actual"
-
-if(actual==expected) {
-	println "item is present"
-}
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - add circle (10)'), 0)
 
 Mobile.closeApplication()
-
-
-
-
-
 
 

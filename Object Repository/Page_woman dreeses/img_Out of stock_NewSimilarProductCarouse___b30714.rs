@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_Out of stock_NewSimilarProductCarouse___b30714</name>
+   <tag></tag>
+   <elementGuidId>bf7ffedf-de65-4f71-ae73-0807dfec3a46</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__next']/div[3]/div/div/div/div[2]/div[3]/div/div/div/div/div/div[2]/div/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img.NewSimilarProductCarouse__ProductImage-sc-zmf4om-0.cjbugJ</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://images.meesho.com/images/products/59716055/ye0bc_512.jpg</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value> woman dreeses</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>NewSimilarProductCarouse__ProductImage-sc-zmf4om-0 cjbugJ</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__next&quot;)/div[@class=&quot;sc-bdvvtL Pagestyled__ContainerStyled-sc-ynkej6-0 byHcNc eVBxUC&quot;]/div[@class=&quot;sc-gsDKAQ Grid__Row-sc-4ki5nk-0 iQiJjX gfsqfL&quot;]/div[@class=&quot;sc-dkPtRN daxXqo&quot;]/div[@class=&quot;ProductCard__ProductCardWrapper-sc-camkhj-2 erGJDH&quot;]/div[@class=&quot;Card__BaseCard-sc-b3n78k-0 iBCjCr ProductCard__Container-sc-camkhj-0 cZUAZr ProductCard__Container-sc-camkhj-0 cZUAZr&quot;]/div[@class=&quot;Card__BaseCard-sc-b3n78k-0 jVQflb&quot;]/div[@class=&quot;Card__BaseCard-sc-b3n78k-0 kFDSCZ&quot;]/div[1]/div[@class=&quot;Slider__SliderWrapper-sc-xkrsbz-2 bWzqJZ NewSimilarProductCarouse__StyledCarousel-sc-zmf4om-1 fNTSWs&quot;]/div[@class=&quot;Slider__SliderTrack-sc-xkrsbz-0 kPpHqm NewSimilarProductCarouse__StyledCarousel-sc-zmf4om-1 fNTSWs&quot;]/div[@class=&quot;Slider__SliderList-sc-xkrsbz-1 beTjmd&quot;]/div[@class=&quot;Container-sc-wd3hnw-0 XWeGA&quot;]/div[1]/img[@class=&quot;NewSimilarProductCarouse__ProductImage-sc-zmf4om-0 cjbugJ&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__next']/div[3]/div/div/div/div[2]/div[3]/div/div/div/div/div/div[2]/div/img</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt=' woman dreeses'])[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/img</value>
+   </webElementXpaths>
+</WebElementEntity>

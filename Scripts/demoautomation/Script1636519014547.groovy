@@ -17,45 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
 
+WebUI.closeBrowser()
 
-Mobile.startApplication('C:\\Users\\Dell\\Downloads\\FMCG - 0.0.3 - APKTurbo.com.apk', true)
+WebUI.openBrowser('')
 
-Mobile.swipe(443, 412, 450, 1889)
+WebUI.navigateToUrl('https://demosite.executeautomation.com/Login.html')
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP (19)'), 0)
+WebUI.setText(findTestObject('Object Repository/Page_Execute Automation/input_Login_UserName'), 'admin')
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - Use Current Address (19)'), 0)
+WebUI.setText(findTestObject('Object Repository/Page_Execute Automation/input_Login_Password'), 'admin')
 
-Mobile.swipe(443, 412, 450, 1889)
+WebUI.click(findTestObject('Object Repository/Page_Execute Automation/input_Login_Login'))
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - Fresh-Produce-500x500 (17)'), 0)
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Execute Automation/select_SelectMr.Ms'), '1', true)
 
-Mobile.swipe(443, 412, 450, 1889)
+WebUI.setText(findTestObject('Object Repository/Page_Execute Automation/input_Initial_Initial'), 'G K')
 
-String expected=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (4)'), 0)
+WebUI.setText(findTestObject('Object Repository/Page_Execute Automation/input__FirstName'), 'First name')
 
-println "$expected"
+WebUI.setText(findTestObject('Object Repository/Page_Execute Automation/input_Middle Name_MiddleName'), 'Middle namw')
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - ADD (17)'), 0)
+WebUI.click(findTestObject('Object Repository/Page_Execute Automation/input_EnglishHindi_Save'))
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - cart 0 (15)'), 0)
-
-String actual=Mobile.getText(findTestObject('Object Repository/android.view.View - Fresh BANANA STEM Lb (5)'), 0)
-
-println "$actual"
-
-if(actual==expected) {
-	println "item is present"
-}
-
-Mobile.tap(findTestObject('Object Repository/android.widget.Image - add circle (10)'), 0)
-
-Mobile.closeApplication()
-
-
-
-
-
-
+WebUI.closeBrowser()
 
